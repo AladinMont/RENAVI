@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/estilosform.css">
+</head>
+<body>
+   <main>
+    <div class="contenedor__todo">
+        <div class="caja__trasera">
+            <div class="seleccion">
+               <h2>Tipo de Victima</h2> 
+                <form action="" class="tvictima">
+                    <input type="radio" name="tvictima" id="directa"  onclick="dextraOff()"><label for="directa" >Directa / Indirecta</label>
+                    <input type="radio" name="tvictima" id="familiar" onclick="dextraOn()"><label for="familiar" >Familar</label>
+                    <input type="radio" name="tvictima" id="servidor" onclick="dextraserv()"><label for="servidor">Servidor Publico</label>
+                </form>
+            </div>
+            <div class="dextra">
+                <h2>Datos del/la solicitante</h2>
+                <form action="" class="solicitante">
+                    <input type="text" name="nomsol" id="nomsol" placeholder="Nombre/s">
+                    <input type="text" name="patsol" id="patsol" placeholder="Apellido paterno">
+                    <input type="text" name="matsol" id="matsol" placeholder="Apellido materno">
+                    <input type="text" name="parentsol" id="parentsol" placeholder="Parentesco">
+                    <input type="text" name="cargosol" id="cargosol" placeholder="Cargo">
+                    <input type="text" name="dependenciasol" id="dependenciasol" placeholder="Dependencia">
+                    <input type="text" name="telsol" id="telsol" placeholder="Telefono fijo">
+                    <input type="text" name="celsol" id="celsol" placeholder="Celular">
+                    <input type="email" name="emailsol" id="emailsol" placeholder="Corrreo electronico">
+                </form>
+            </div>
+            <div class="victima">
+                <h2>Datos de la victima</h2>
+            </div>
+        </div>
+    </div>
+   </main> 
+   <script src="JS/scritpform.js"></script>
+</body>
+</html>

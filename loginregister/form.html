@@ -36,9 +36,9 @@
             <div class="victima">
                 <h2>Datos de la victima</h2>
                 <form action="" class="victimatipo">
-                    <input type="radio" name="tivictimas" id="directas"><label for="directas">Directa</label>
-                    <input type="radio" name="tivictimas" id="indirecta"><label for="indirecta">Indirecta</label>
-                    <input type="radio" name="tivictimas" id="potencial"><label for="potencial">Potenial</label>
+                    <input type="radio" name="tivictimas" id="directas" onclick="indirectadirecta()"><label for="directas">Directa</label>
+                    <input type="radio" name="tivictimas" id="indirecta" onclick="indirectaOn()"><label for="indirecta">Indirecta</label>
+                    <input type="radio" name="tivictimas" id="potencial" onclick="indirectapotencial()"><label for="potencial">Potenial</label>
                 </form>
                 <form action="" class="datosvictima">
                     <input type="text" name="nomvic" id="nomvic" placeholder="Nombre/s">
@@ -51,22 +51,35 @@
                     <input type="text" name="nacionvic" id="nacionvic" placeholder="Nacionalidad">
                     <input type="text" name="curpvic" id="curpvic" placeholder="CURP">
                     <label for="" style="font-size: 25px;">|</label><label for="">Lugar de nacimiento</label>
-                    <input type="text" name="paisvic" id="paisvic" placeholder="Pais">
-                    <input type="text" name="entidadvic" id="entidadvic" placeholder="Entidad federativa">
-                    <input type="text" name="delvic" id="delvic" placeholder="Delegacion">
-                    <input type="text" name="poblacionvic" id="poblacionvic" placeholder="Poblacion">
+                    <input type="text" name="paisnavic" id="paisnavic" placeholder="Pais">
+                    <input type="text" name="entidadnavic" id="entidadnavic" placeholder="Entidad federativa">
+                    <input type="text" name="delnavic" id="delnavic" placeholder="Delegacion">
+                    <input type="text" name="poblacionnavic" id="poblacionnavic" placeholder="Poblacion">
                     <label for="" style="font-size: 25px;">|</label><label for="">Estado civil</label>
                     <input type="radio" name="civilvic" id="soltero" onclick="otroSoltero()"><label for="soltero">Soltero/a</label>
                     <input type="radio" name="civilvic" id="casado" onclick="otroCasado()"><label for="casado">Casado/a</label>
                     <input type="radio" name="civilvic" id="otro" onclick="otroOn()"><label for="otro">Otro</label>
-                    <select name="civilciv" id="sivilvic" style="margin-top: -10px;" disabled>
+                    <select name="civilciv" id="sivilvic" style="margin-top: -10px; font-size: 15px;" disabled>
                         <option value=""></option>
                         <option value="divorciado">Divorciado/a</option>
                         <option value="viudo">Viudo/a</option>
                         <option value="libe">Union libre</option>
                         <option value="separado">Separado/a</option>
                     </select>
-                    
+                    <input type="text" name="callevic" id="callevic" placeholder="Calle">
+                    <input type="text" name="exteriorvic" id="exteriorvic" placeholder="No. exterior">
+                    <input type="text" name="interiorvic" id="interiorvic" placeholder="No. interior">
+                    <input type="text" name="cpvic" id="cpciv" placeholder="Codigo postal">
+                    <input type="text" name="colvic" id="colvic" placeholder="Colonia">
+                    <input type="text" name="localidadvic" id="localidadvic" placeholder="Localidad">
+                    <input type="text" name="entidadvic" id="entidadvic" placeholder="Entidad federativa">
+                    <input type="text" name="delvic" id="delvic" placeholder="Delegacion">
+                    <input type="text" name="telvic" id="telvic" placeholder="Telefono fijo">
+
+                </form>
+                <form action="" class="indirectaform" id="indirectaform" style="display: none;">
+                    <h2>RELACIÓN DE LA VÍCTIMA INDIRECTA CON LA VÍCTIMA DIRECTA</h2>
+
                 </form>
             </div>
         </div>

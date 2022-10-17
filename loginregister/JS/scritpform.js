@@ -3,6 +3,7 @@ var parentsol = document.getElementById('parentsol');
 var cargosol = document.getElementById('cargosol');
 var dependenciasol = document.getElementById('dependenciasol');
 var estado = document.getElementById("sivilvic");
+var indirecta = document.querySelector(".indirectaform");
 
 function dextraOn() {
     if (document.getElementById('familiar').checked == true) {
@@ -41,5 +42,20 @@ function otroCasado() {
 function otroSoltero() {
     if (document.getElementById("soltero").checked == true) {
         estado.disabled = true;
+    }
+}
+function indiretaOn(){
+    if (document.getElementById("indirecta").checked == true) {
+        indirecta.style.display="block";
+    }
+}
+function indirectadirecta() {
+    if (document.getElementById("directas").checked == true) {
+        indirecta.style.display="none";
+    }
+}
+function indirectapotenccial() {
+    if (document.getElementById("potencial").checked == true) {
+        indirecta.style.display="none";
     }
 }

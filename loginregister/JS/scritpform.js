@@ -3,7 +3,7 @@ var parentsol = document.getElementById('parentsol');
 var cargosol = document.getElementById('cargosol');
 var dependenciasol = document.getElementById('dependenciasol');
 var estado = document.getElementById("sivilvic");
-var indirecta = document.querySelector(".indirectaform");
+var indirecta = document.querySelector(".indirectastabla");
 
 function dextraOn() {
     if (document.getElementById('familiar').checked == true) {
@@ -54,7 +54,7 @@ function indirectadirecta() {
         indirecta.style.display="none";
     }
 }
-function indirectapotenccial() {
+function indirectapotencial() {
     if (document.getElementById("potencial").checked == true) {
         indirecta.style.display="none";
     }

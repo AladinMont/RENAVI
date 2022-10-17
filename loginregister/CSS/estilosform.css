@@ -113,9 +113,8 @@ main {
     display: inline;
 }
 
-.caja__trasera form button {
+.caja__trasera form button{
     padding: 10px 40px;
-    margin-top: 40px;
     border: none;
     font-size: 14px;
     background: #ec42d0;
@@ -135,8 +134,19 @@ main {
     display: none;
 }
 
+
+
 #parentsol,
 #cargosol,
 #dependenciasol {
     display: none;
 }
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 15px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 12px;     font-weight: normal;     padding: 8px;     background: #ec42b0;    border-bottom: 1px solid #fff; color: rgb(255, 255, 255); }
+
+td {    padding: 8px;     background: #ef93e0;     border-bottom: 1px solid #fff;
+    color: rgb(0, 0, 0);    border-top: 1px solid transparent; }
+
+tr:hover td { background: #d0dafd; color: #339; }

@@ -44,18 +44,4 @@ function otroSoltero() {
         estado.disabled = true;
     }
 }
-function indiretaOn(){
-    if (document.getElementById("indirecta").checked == true) {
-        indirecta.style.display="block";
-    }
-}
-function indirectadirecta() {
-    if (document.getElementById("directas").checked == true) {
-        indirecta.style.display="none";
-    }
-}
-function indirectapotencial() {
-    if (document.getElementById("potencial").checked == true) {
-        indirecta.style.display="none";
-    }
-}
+

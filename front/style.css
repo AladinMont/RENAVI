@@ -123,6 +123,7 @@ header ul li a.registro{
 }
 
 .re{
+    align-items: center;
     background-color: #000;
     width: 40%;
     height: 70%;
@@ -137,6 +138,22 @@ header ul li a.registro{
     
 }
 
+.enviar{
+    font-size: 2em;
+    color: #fff;
+    border: 1px solid;
+    border-color: red;
+    padding: 20px;
+    background-color: transparent;
+    font-family: 'Anton', sans-serif;
+}
+
+.enviar:hover{
+    background-color: #CA07DE;
+    color: #000;
+    transition: 0.3s;
+}
+
 .Registro{
     display: flex;
     justify-content: center;
@@ -146,12 +163,23 @@ header ul li a.registro{
     width: 100%;
     height: 100vh;
     background: url(imagenes/registro.png);
+    background-size: cover;
 }
+
+.reg, .regim{
+    font-size: 2em;
+}
+
 input{
     font-family: 'Anton', sans-serif;
     color: #fff;
     border: 0.5px solid red;
     background: transparent;
+}
+input:hover, select:hover, #deseve:hover{
+    background-color: #CA07DE;
+    color: #000;
+    transition: 0.3s;
 }
 
 .zona2{
@@ -165,6 +193,9 @@ input{
     height: auto;
     background: rgb(0,0,0);
 background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(145,145,145,1) 100%);
+}
+.zona2 div h1{
+    margin: auto;
 }
 .zona1abajo{
     transition-property: padding-top;
@@ -204,8 +235,9 @@ background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(145,145,145,1) 100%)
     margin: auto;
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: #000;
     width: 25%;
+    height: 300px;
     font-family: 'Anton', sans-serif;
     padding: 100px 30px;
 }
@@ -214,4 +246,143 @@ footer{
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+.concierto:hover, .cultura:hover, .deportes:hover{
+    margin: auto;
+    background-size: cover;
+    background-color: #CA07DE;
+    transition: 0.5s;
+    opacity: 0.3;
+    text-align: center;
+    align-items: center;
+    width: 25%;
+    height: 300px;
+    font-family: 'Anton', sans-serif;
+    padding: 100px 30px;
+}
+
+.concierto:hover h1, .cultura:hover h1, .deportes:hover h1{
+    margin-top: auto;
+    opacity: 1;
+    transition: 0.5;
+    font-size: 2em;
+}
+
+.adminvista{
+    width: 90%;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.gevento{
+    width: 90%;
+    height: auto;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.gevento h2{
+    font-size: 3em;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+.ev{
+    background-color: #000;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 40pxz;
+}
+
+label{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+}
+select{
+    width: auto;
+    background: transparent;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    border: 1px solid;
+    border-color: red;
+}
+
+#deseve{
+    width: 75%;
+    background: transparent;
+    font-size: 1.5em;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    border: 1px solid;
+    border-color: red;
+}
+
+#fecha, #hora{
+    font-size: 2em;
+}
+
+.lista{
+    width: 90%;
+    background-color: #fff;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    color: #000;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.event{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    margin: auto;
+    transition: transform 0.3s;
+    
+}
+.event:hover{
+    transform: scale(1.05);
+}
+
+.even{
+    font-size: 2em;
+}
+
+.eved{
+    font-size: 1em;
+    max-width: 80%;
+}
+.evev{
+    font-size: 1em;
+    text-decoration: none;
+    color: #000;
+}
+
+.even, .eved, .evev{
+    padding: 0px 20px;
+    margin: auto;
+}
+.pantallaveneto{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    height: auto;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    color: #000;
+    background: #fff;
+    text-align: center;
+}
+
+.lugarevento{
+    width: 90%;
+    
 }

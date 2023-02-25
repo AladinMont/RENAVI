@@ -8,32 +8,34 @@
     <title>Inicio</title>
 </head>
 <body>
-    <header class="abajo">
-        <a href="index.html" class="logo">TICKETLAND</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Tienda</a></li>
-                <li><a href="">Tienda de la comunidad</a></li>
-                <li><a href="">Iniciar sesión</a></li>
-                <li><a href="" class="registro">Registro</a></li>
-            </ul>
-        </nav>
-    </header>
+    
     <section class="Registro">
         <div class="imag"></div>
-        <div class="re">
-            <h1 >Registro</h1>
+        <div class="re"><br><br><br>
+            <h1 >Registro</h1><br><br><br><br><br><br>
             <br>
             <form action="" style="border: 2px solid;border-color: red;width: 85%;margin: auto;padding: 20px;">
-                <label for="Nom">Nombre:</label>
-                <input type="text" name="" id="Nom">
+                <label for="nom" class="reg">Usuario:</label>
+                <input type="text" name="" id="nom" class="regim"><br><br>
+                <label for="cos" class="reg">Contraseña:</label>
+                <input type="password" name="" id="cos" class="regim"><br><br>
+                <button class="enviar">Iniciar sesión</button>
             </form>
         </div>
     </section>
     
     <script>
-        
+        var enviar = document.querySelector(".enviar");
+        var user = document.querySelector("#nom");
+        var pass = document.querySelector("#cos");
+        enviar.addEventListener("click", function () {
+            if (user.value.length!=0 && pass.value.length!=0) {
+                alert("Bienvenido Administrador");
+                window.open("admin.html");
+            } else {
+                alert("Datos faltantes");
+            }
+        })
     </script>
 </body>
 </html>

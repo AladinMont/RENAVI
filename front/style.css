@@ -369,6 +369,7 @@ select{
 .even, .eved, .evev{
     padding: 0px 20px;
     margin: auto;
+    
 }
 .pantallaveneto{
     width: 90%;
@@ -384,5 +385,7 @@ select{
 
 .lugarevento{
     width: 90%;
-    
+    align-items: center;
+    text-align: center; 
+    margin: auto;
 }
